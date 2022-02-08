@@ -46,7 +46,6 @@ header {
 }
 
 .container {
-  max-height: 100%;
   margin: 20px;
   display: flex;
 }
@@ -96,4 +95,16 @@ header {
   padding: 1rem;
   border-radius: 1rem;
   background-color: #eeeeee;
+}
+
+.code-snippet {
+  width: fit-content;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #2d2d2d;
+  border-radius: 0.3rem;
+}
+
+.main-content-container {
+  padding-left: 1rem;
 }
