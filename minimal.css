@@ -26,11 +26,6 @@ code {
     margin: 1rem;
 }
 
-.alert{
-    padding: 1rem;
-    border-radius: 0.3rem;
-}
-
 .display-component {
     display: flex;
     align-items: center;
@@ -40,6 +35,11 @@ code {
     border-radius: 1rem;
     gap: 1rem;
     margin: 1rem;
+}
+
+.alert{
+    padding: 1rem;
+    border-radius: 0.3rem;
 }
 
 .primary{
