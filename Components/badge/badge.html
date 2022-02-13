@@ -52,64 +52,114 @@
         <div class="main content">
             <div class="main-content-container">
                 <h1>Badge</h1>
-                <p>Badges are small circles, positioned either at top-right or bottom-right of the parent component. Badge can be used to display numbers, online / offline status, depending on where they are used.</p>
-            </div>
-            <hr/>
+                <p>Badges are small circles, positioned either at top-right or bottom-right of the parent component.
+                    Badge can be used to display numbers, online / offline status, depending on where they are used.</p>
+                <hr />
 
-            <h2>Avatar Badge</h2>
-            <p>Avatar Badge is used to show the current status of a user.
-                It can be used with 3 variants : online | offline | dnd</p>
+                <h2>Avatar Badge</h2>
+                <p>Avatar Badge is used to show the current status of a user.
+                    It can be used with 4 variants : online | away | offline | dnd</p>
+            </div>
 
             <div class="display-component">
-                <div class="badge" >
-                    <img class="avatar" src="https://url-of-the-image" alt="avatar-1">
-                    <div class="online"></div>
+                <div class="badge">
+                    <img class="avatar" src="https://picsum.photos/50">
+                    <div class="online bottom-left"></div>
                 </div>
 
-                <div class="badge" >
-                    <img class="avatar" src="https://url-of-the-image" alt="avatar-1">
-                    <div class="offline"></div>
+                <div class="badge">
+                    <img class="avatar" src="https://picsum.photos/50">
+                    <div class="away top-left"></div>
                 </div>
 
-                <div class="badge" >
-                    <img class="avatar" src="/assets/svg/female profile.svg">
-                    <div class="dnd"></div>
+                <div class="badge">
+                    <img class="avatar" src="https://picsum.photos/50">
+                    <div class="offline top-right"></div>
+                </div>
+
+                <div class="badge">
+                    <img class="avatar" src="https://picsum.photos/50">
+                    <div class="dnd bottom-right"></div>
                 </div>
             </div>
 
             <div class="code-snippet">
-                <code class="language-html"> 
-                    &lt;div class=&quot;alert primary&quot;&gt;
-                    &lt;strong&gt;Primary!&lt;/strong&gt; This is a Primary Alert - Check it now!
-                &lt;/div&gt;
-                </code>
                 <code class="language-html">
-                &lt;div class=&quot;alert error&quot;&gt;
-                    &lt;strong&gt;Error!&lt;/strong&gt; This is an Error Alert - Check it now!
-                &lt;/div&gt;
-                </code>
-                <code class="language-html">
-                &lt;div class=&quot;alert success&quot;&gt;
-                    &lt;strong&gt;Success!&lt;/strong&gt; This is a Success Alert - Check it now!
-                &lt;/div&gt;
-                </code>
-                <code class="language-html">
-                &lt;div class=&quot;alert warning&quot;&gt;
-                    &lt;strong&gt;Warning!&lt;/strong&gt; This is a Warning Alert - Check it now!
-                &lt;/div&gt;
-                </code>
-              </div>
-        </div>
+    &lt;div class=&quot;badge&quot; &gt;
+        &lt;img class=&quot;avatar&quot; src=&quot;https://picsum.photos/50&quot;&gt;   
+        &lt;div class=&quot;online bottom-left&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
 
-        <!-- <h1>Installation</h1>
-<p>
-  To install minimal-ui, you need to include the following link in
-  your head tag:
-</p>
-<div class="code-snippet">
-  <code
-    class="language-html"> &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jsuryakt/minimal-ui/minimal.css" /&gt;</code>
-</div> -->
+    &lt;div class=&quot;badge&quot; &gt;
+        &lt;img class=&quot;avatar&quot; src=&quot;https://picsum.photos/50&quot;&gt;
+        &lt;div class=&quot;away top-left&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;badge&quot; &gt;
+        &lt;img class=&quot;avatar&quot; src=&quot;https://picsum.photos/50&quot;&gt;
+        &lt;div class=&quot;offline top-right&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;badge&quot; &gt;
+        &lt;img class=&quot;avatar&quot; src=&quot;https://picsum.photos/50&quot;&gt;
+        &lt;div class=&quot;dnd bottom-right&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+                </code>
+            </div>
+
+            <div class="main-content-container">
+                <h2>Icon Badge</h2>
+                <p>Icon Badge is used to cart status, notification count etc. Use icon-sm, icon-md, icon-lg to resize icons</p>
+                <hr />
+            </div>
+
+            <div class="display-component">
+                <div class="badge-icon">
+                    <i class="bi bi-envelope-fill icon-sm"></i>
+                    <div class="online top-right">99</div>
+                </div>
+
+                <div class="badge-icon">
+                    <i class="bi bi-cart-fill icon-md"></i>
+                    <div class="away top-right">34</div>
+                </div>
+
+                <div class="badge-icon">
+                    <i class="bi bi-person-circle icon-lg"></i>
+                    <div class="dnd bottom-right"></div>
+                </div>
+
+                <div class="badge-icon">
+                    <i class="bi bi-camera-fill icon-lg"></i>
+                    <div class="offline bottom-left"></div>
+                </div>
+            </div>
+
+            <div class="code-snippet">
+                <code class="language-html">
+    &lt;div class=&quot;badge-icon&quot;&gt;    
+        &lt;i class=&quot;bi bi-envelope-fill icon-sm&quot;&gt;&lt;/i&gt;   
+        &lt;div class=&quot;online top-right&quot;&gt;99&lt;/div&gt;    
+    &lt;/div&gt;    
+
+    &lt;div class=&quot;badge-icon&quot;&gt;
+        &lt;i class=&quot;bi bi-cart-fill icon-md&quot;&gt;&lt;/i&gt;
+        &lt;div class=&quot;away top-right&quot;&gt;34&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;badge-icon&quot;&gt;
+        &lt;i class=&quot;bi bi-person-circle icon-lg&quot;&gt;&lt;/i&gt;
+        &lt;div class=&quot;dnd bottom-right&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;badge-icon&quot;&gt;
+        &lt;i class=&quot;bi bi-camera-fill icon-lg&quot;&gt;&lt;/i&gt;
+        &lt;div class=&quot;offline bottom-left&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+                </code>
+            </div>
+
+        </div>
 
     </div>
 

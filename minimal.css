@@ -1,60 +1,131 @@
+/* @import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"); */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 .avatar {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .sm {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .md {
-    width: 75px;
-    height: 75px;
+  width: 75px;
+  height: 75px;
 }
-
 
 .lg {
-    width: 100px;
-    height: 100px;
-}
-
-code {
-    display: block;
+  width: 100px;
+  height: 100px;
 }
 
 .code-snippet {
-    margin: 1rem;
+  margin: 1rem;
 }
+
+/* code {
+    margin: 0rem 1rem;
+} */
 
 .display-component {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    background-color: #cccccc;
-    border-radius: 1rem;
-    gap: 1rem;
-    margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #cccccc;
+  border-radius: 1rem;
+  gap: 1.5rem;
+  margin: 1rem;
 }
 
-.alert{
-    padding: 1rem;
-    border-radius: 0.3rem;
+.alert {
+  padding: 1rem;
+  border-radius: 0.3rem;
 }
 
-.primary{
-    background-color: #0070f3;
-    color: white;
+.primary {
+  background-color: #0070f3;
+  color: white;
 }
-.error{
-    background-color: #f5222d;
-    color: white;
+.error {
+  background-color: #f5222d;
+  color: white;
 }
-.success{
-    background-color: #52c41a;
-    color: white;
+.success {
+  background-color: #52c41a;
+  color: white;
 }
-.warning{
-    background-color: #faad14;
-    color: white;
+.warning {
+  background-color: #faad14;
+  color: white;
+}
+
+/* badeg */
+.badge , .badge-icon{
+  position: relative;
+}
+
+.badge div, .badge-icon div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.badge-icon div {
+    padding: 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 800;
+  }
+
+.bottom-right {
+  bottom: 10px;
+  right: -5px;
+}
+
+.bottom-left {
+  bottom: 10px;
+  left: -5px;
+}
+
+.top-right {
+  top: 5px;
+  right: -7px;
+}
+
+.top-left {
+  top: 5px;
+  left: -7px;
+}
+
+.online {
+  background-color: rgb(16, 236, 16);
+}
+
+.offline {
+  background-color: grey;
+}
+
+.away {
+  background-color: #fa8e00;
+}
+
+.dnd {
+  background-color: rgb(247, 14, 14);
+}
+
+/* badge icon */
+
+.icon-sm {
+    font-size: 3rem;
+}
+.icon-md {
+    font-size: 3rem;
+}
+.icon-lg {
+    font-size: 4rem;
 }
