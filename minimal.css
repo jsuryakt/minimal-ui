@@ -42,6 +42,17 @@ code {
     border-radius: 0.3rem;
 }
 
+.display-component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #cccccc;
+    border-radius: 1rem;
+    gap: 1rem;
+    margin: 1rem;
+}
+
 .primary{
     background-color: #0070f3;
     color: white;
