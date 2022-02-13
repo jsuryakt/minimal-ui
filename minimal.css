@@ -18,10 +18,6 @@
     height: 100px;
 }
 
-code {
-    display: block;
-}
-
 .code-snippet {
     margin: 1rem;
 }
@@ -38,6 +34,10 @@ code {
 }
 
 .alert{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 400px;
     padding: 1rem;
     border-radius: 0.3rem;
 }
