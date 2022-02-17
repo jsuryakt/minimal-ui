@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>card - minimal ui</title>
+    <link rel="stylesheet" href="/Components/install/install.css" />
+    <link rel="stylesheet" href="/prism.css" />
+    <link rel="stylesheet" href="/minimal.css" />
+    <link rel="stylesheet" href="card.css" />
+</head>
+
+<body>
+    <a class="main-header-link" href="/index.html">
+        <header>
+            <h1 class="overlap">
+                minimal
+                <h1 class="under">UI</h1>
+            </h1>
+        </header>
+    </a>
+
+    <div class="container">
+        <div class="sidebar content">
+            <a class="sidebar-link" href="/components/avatar/avatar.html">avatar</a>
+            <a class="sidebar-link" href="/components/alert/alert.html"> alert </a>
+            <a class="sidebar-link" href="/components/badge/badge.html"> badge </a>
+            <a class="sidebar-link" href="/components/button/button.html"> button </a>
+            <a class="sidebar-link sidebar-active" href="/components/card/card.html"> card </a>
+            <a class="sidebar-link" href="/components/image/image.html"> image </a>
+            <a class="sidebar-link" href="/components/input/input.html"> input </a>
+            <a class="sidebar-link" href="/components/badge/badge.html">
+                text utilities
+            </a>
+            <a class="sidebar-link" href="/components/badge/badge.html"> lists </a>
+            <a class="sidebar-link" href="/components/badge/badge.html">
+                navigation
+            </a>
+            <a class="sidebar-link" href="/components/badge/badge.html"> modal </a>
+            <a class="sidebar-link" href="/components/badge/badge.html">
+                toast/notify/snackbar
+            </a>
+            <a class="sidebar-link" href="/components/badge/badge.html">
+                simplified grid
+            </a>
+            <a class="sidebar-link" href="/components/badge/badge.html"> badge </a>
+        </div>
+
+        <div class="main content">
+            <div class="main-content-container">
+                <h1>card</h1>
+                <p>Cards are surfaces that display content and actions on a single topic.
+                    They should be easy to scan for relevant and actionable information. Elements, like text and images,
+                    should be placed on them in a way that clearly indicates hierarchy.
+                </p>
+                <hr />
+
+                <h2>cards with badges</h2>
+                <p>these are cards with a badge</p>
+            </div>
+
+            <div class="display-component">
+                <div class="card">
+                    <div class="col1">
+                      <div class="img-block">
+                        <img src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg" />
+                      </div>
+                      <div class="title-desc">
+                        <h3>Our Changing Planet</h3>
+                        <p>by Kurt Wagner</p>
+                      </div>
+                    </div>
+              
+                    <div class="col2">
+                      <button>READ</button>
+                      <button>BOOKMARK</button>
+                      <button><i class="fas fa-heart"></i></button>
+                      <button><i class="fas fa-share-alt" ></i></button>
+                      <button><i class="fas fa-ellipsis-v"></i></button>  
+                    </div>
+                  </div>
+            </div>
+
+            <div class="code-snippet">
+                <code class="language-html">
+    &lt;button class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+    &lt;button class=&quot;btn btn-secondary&quot;&gt;Secondary&lt;/button&gt;    
+    &lt;button class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
+    &lt;button class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+    &lt;button class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
+    &lt;button class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
+    &lt;button class=&quot;btn btn-light&quot;&gt;Light&lt;/button&gt;
+    &lt;button class=&quot;btn btn-dark&quot;&gt;Dark&lt;/button&gt;
+                </code>
+            </div>
+            <!-- &lt;button class=&quot;btn btn-link&quot;&gt;Link&lt;/button&gt; -->
+
+            <div class="main-content-container">
+                <h2>link button</h2>
+                <p>want to attach a link action, at a button tap? use link button</p>
+                <hr />
+            </div>
+
+            <div class="display-component">
+                <a href="#"><button class="btn btn-link">LINK</button></a>
+            </div>
+
+            <div class="code-snippet">
+                <code class="language-html">
+    &lt;a href=&quot;#&quot;&gt;&lt;button class=&quot;btn btn-link&quot;&gt;LINK&lt;/button&gt;&lt;/a&gt;    
+                </code>
+            </div>
+
+            <div class="main-content-container">
+                <h2>icon button</h2>
+                <p>icon alongside a text in a button</p>
+                <hr />
+            </div>
+
+            <div class="display-component">
+                <button class="btn btn-icon btn-success"><i class="bi bi-download"></i>Download</button>
+            </div>
+
+            <div class="code-snippet">
+                <code class="language-html">
+    &lt;button class=&quot;btn btn-icon btn-success&quot;&gt;&lt;i class=&quot;bi bi-download&quot;&gt;&lt;/i&gt;Download&lt;/button&gt;    
+                </code>
+            </div>
+
+            <div class="main-content-container">
+                <h2>floating action button</h2>
+                <p>a floating action button (FAB) performs the primary, or most common, action on a screen. It appears
+                    in front of all screen content, typically as a circular shape with an icon in its center</p>
+                <hr />
+            </div>
+
+            <div class="display-component">
+                <button class="btn btn-float"><i class="bi bi-plus"></i></button>
+                <button class="btn btn-float"><i class="bi bi-heart"></i></button>
+                <button class="btn btn-float"><i class="bi bi-heart-fill"></i></button>
+                <button class="btn btn-float"><i class="bi bi-send-fill"></i></button>
+            </div>
+
+            <div class="code-snippet">
+                <code class="language-html">
+    &lt;button class=&quot;btn btn-float&quot;&gt;&lt;i class=&quot;bi bi-plus&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button class=&quot;btn btn-float&quot;&gt;&lt;i class=&quot;bi bi-heart&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button class=&quot;btn btn-float&quot;&gt;&lt;i class=&quot;bi bi-heart-fill&quot;&gt;&lt;/i&gt;&lt;/button&gt;    
+    &lt;button class=&quot;btn btn-float&quot;&gt;&lt;i class=&quot;bi bi-send-fill&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                </code>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/prism.js"></script>
+</body>
+
+</html>

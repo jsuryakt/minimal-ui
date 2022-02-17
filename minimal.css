@@ -1,0 +1,239 @@
+/* @import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"); */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+.avatar {
+  border-radius: 50%;
+}
+
+.sm {
+  width: 50px;
+  height: 50px;
+}
+
+.md {
+  width: 75px;
+  height: 75px;
+}
+
+.lg {
+  width: 100px;
+  height: 100px;
+}
+
+.code-snippet {
+  margin: 1rem;
+}
+
+/* code {
+    margin: 0rem 1rem;
+} */
+
+.display-component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #cccccc;
+  border-radius: 1rem;
+  gap: 1.5rem;
+  margin: 1rem;
+}
+
+.alert {
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.primary {
+  background-color: #0070f3;
+  color: white;
+}
+.error {
+  background-color: #f5222d;
+  color: white;
+}
+.success {
+  background-color: #52c41a;
+  color: white;
+}
+.warning {
+  background-color: #faad14;
+  color: white;
+}
+
+/* badeg */
+.badge , .badge-icon{
+  position: relative;
+}
+
+.badge div, .badge-icon div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.badge-icon div {
+    padding: 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 800;
+  }
+
+.bottom-right {
+  bottom: 10px;
+  right: -5px;
+}
+
+.bottom-left {
+  bottom: 10px;
+  left: -5px;
+}
+
+.top-right {
+  top: 5px;
+  right: -7px;
+}
+
+.top-left {
+  top: 5px;
+  left: -7px;
+}
+
+.online {
+  background-color: rgb(16, 236, 16);
+}
+
+.offline {
+  background-color: grey;
+}
+
+.away {
+  background-color: #fa8e00;
+}
+
+.dnd {
+  background-color: rgb(247, 14, 14);
+}
+
+/* badge icon */
+
+.icon-sm {
+    font-size: 3rem;
+}
+.icon-md {
+    font-size: 3rem;
+}
+.icon-lg {
+    font-size: 4rem;
+}
+
+/* button */
+
+.btn {
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #0070f3;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #015bbb;
+}
+
+.btn-secondary {
+    background-color: #aaa7a7;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #9b9b9b;
+}
+
+.btn-success {
+    background-color: #52c41a;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #43a113;
+}
+
+.btn-warning {
+    background-color: #faad14;
+    color: black;
+}
+
+.btn-warning:hover {
+    background-color: #f5a000;
+}
+
+.btn-danger {
+    background-color: #f5222d;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #db2929;
+}
+
+.btn-info {
+    background-color: #1890ff;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: #1374e6;
+}
+
+.btn-light {
+    background-color: #f5f5f5;
+    color: black;
+}
+
+.btn-light:hover {
+    background-color: #e8e8e8;
+}
+
+.btn-dark {
+    background-color: #05203a;
+    color: white;
+}
+
+.btn-dark:hover {
+    background-color: #000a17;
+}
+
+.btn-link {
+    /* background-color: transparent; */
+    background-color: #0070f3;
+    color: white;
+}
+
+.btn-link:hover {
+    background-color: #0069d9;
+    text-decoration: underline;
+}
+
+.btn-icon {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-float {
+    font-size: 1.2rem;
+}
+
+.btn-float:hover {
+    background-color: #e0e0e0;
+}
