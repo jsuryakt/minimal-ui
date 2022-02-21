@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>card - minimal ui</title>
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="card.css" />
+</head>
+
+<body>
+    <div class="main-header">
+        <a class="main-header-link" href="/index.html">
+            <header>
+                <h1 class="overlap">
+                    minimal
+                    <h1 class="under">UI</h1>
+                </h1>
+            </header>
+        </a>
+        <button id="bar" class="menu-bar" onclick="menu()"><i class="bi bi-list"></i></button>
+    </div>
+
+    <div class="container">
+        <div class="sidebar content">
+            <a class="sidebar-link" href="/components/install/install.html">install</a>
+            <a class="sidebar-link" href="/components/avatar/avatar.html">avatar</a>
+            <a class="sidebar-link" href="/components/alert/alert.html">alert</a>
+            <a class="sidebar-link" href="/components/badge/badge.html">badge</a>
+            <a class="sidebar-link" href="/components/button/button.html">button</a>
+            <a class="sidebar-link sidebar-active" href="/components/card/card.html">card</a>
+            <a class="sidebar-link" href="/components/image/image.html">image</a>
+            <a class="sidebar-link" href="/components/input/input.html">input</a>
+            <a class="sidebar-link" href="/components/typography/typography.html">typography</a>
+            <a class="sidebar-link" href="/components/navigation/navigation.html">navigation</a>
+            <a class="sidebar-link" href="/components/slider/slider.html">slider</a>
+        </div>
+
+        <div class="main content">
+            <div class="main-content-container">
+                <h1>card</h1>
+                <p>Cards are surfaces that display content and actions on a single topic.
+                    They should be easy to scan for relevant and actionable information. Elements, like text and images,
+                    should be placed on them in a way that clearly indicates hierarchy.
+                </p>
+                <hr />
+
+                <h2>cards with badges</h2>
+                <p>these are cards with a badge</p>
+            </div>
+
+            <div class="display-flex">
+                <div class="display-component">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="img-v">
+                                <img src="https://picsum.photos/170" />
+                                <div class="new-badge top-left">NEW</div>
+                            </div>
+                            <div class="card-title-desc">
+                                <h3>Our Changing Education</h3>
+                                <p>by Tanay Pratap</p>
+                            </div>
+                        </div>
+
+                        <div class="card-action-btn">
+                            <button class="purple-hover">READ</button>
+                            <button class="purple-hover">BOOKMARK</button>
+                            <button class="icon-hover"><i class="bi bi-heart"></i></button>
+                            <button class="icon-hover"><i class="bi bi-share"></i></button>
+                            <button class="icon-hover"><i class="bi bi-three-dots-vertical"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-snippet">
+                    <code class="language-html">
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;
+            &lt;div class=&quot;img-v&quot;&gt;
+                &lt;img src=&quot;https://picsum.photos/170&quot; /&gt;
+                &lt;div class=&quot;new-badge top-left&quot;&gt;NEW&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-title-desc&quot;&gt;
+                &lt;h3&gt;Our Changing Education&lt;/h3&gt;
+                &lt;p&gt;by Tanay Pratap&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;card-action-btn&quot;&gt;
+            &lt;button class=&quot;purple-hover&quot;&gt;READ&lt;/button&gt;
+            &lt;button class=&quot;purple-hover&quot;&gt;BOOKMARK&lt;/button&gt;
+            &lt;button class=&quot;icon-hover&quot;&gt;&lt;i class=&quot;bi bi-heart&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class=&quot;icon-hover&quot;&gt;&lt;i class=&quot;bi bi-share&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class=&quot;icon-hover&quot;&gt;&lt;i class=&quot;bi bi-three-dots-vertical&quot;&gt;&lt;/i&gt;&lt;/button&gt;   
+        &lt;/div&gt;
+    &lt;/div&gt;
+                </code>
+                </div>
+            </div>
+
+            <div class="main-content-container">
+                <h2>dismissable cards</h2>
+                <p>cards which dismiss on button press</p>
+                <hr />
+            </div>
+
+            <div class="display-flex">
+                <div class="display-component">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="img-v">
+                                <img src="https://picsum.photos/170" />
+                                <div class="new-badge top-left">NEW</div>
+                                <button class="close-badge top-right-in"><i class="bi bi-x"></i></button>
+                            </div>
+                            <div class="card-title-desc">
+                                <h3>Our Changing Education</h3>
+                                <p>by Tanay Pratap</p>
+                            </div>
+                        </div>
+
+                        <div class="card-action-btn">
+                            <button class="purple-hover">READ</button>
+                            <button class="purple-hover">BOOKMARK</button>
+                            <button class="icon-hover"><i class="bi bi-heart"></i></button>
+                            <button class="icon-hover"><i class="bi bi-share"></i></button>
+                            <button class="icon-hover"><i class="bi bi-three-dots-vertical"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-snippet">
+                    <code class="language-html">
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;
+            &lt;div class=&quot;img-v&quot;&gt;
+                &lt;img src=&quot;https://picsum.photos/170&quot; /&gt;
+                &lt;div class=&quot;new-badge top-left&quot;&gt;NEW&lt;/div&gt;
+                &lt;button class=&quot;close-badge top-right-in&quot;&gt;&lt;i class=&quot;bi bi-x&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-title-desc&quot;&gt;
+                &lt;h3&gt;Our Changing Education&lt;/h3&gt;
+                &lt;p&gt;by Tanay Pratap&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;card-action-btn&quot;&gt;
+            &lt;button class=&quot;purple-hover&quot;&gt;READ&lt;/button&gt;
+            &lt;button class=&quot;purple-hover&quot;&gt;BOOKMARK&lt;/button&gt;
+            &lt;button class=&quot;icon-hover&quot;&gt;&lt;i class=&quot;bi bi-heart&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class=&quot;icon-hover&quot;&gt;&lt;i class=&quot;bi bi-share&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class=&quot;icon-hover&quot;&gt;&lt;i class=&quot;bi bi-three-dots-vertical&quot;&gt;&lt;/i&gt;&lt;/button&gt;   
+        &lt;/div&gt;
+    &lt;/div&gt;
+                </code>
+                </div>
+            </div>
+
+            <div class="main-content-container">
+                <h2>overlay card</h2>
+                <p>card with an overlay</p>
+                <hr />
+            </div>
+
+            <div class="display-flex">
+                <div class="display-component">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="img-v">
+                                <img src="https://picsum.photos/170" />
+                                <div class="new-badge top-left">NEW</div>
+                            </div>
+                            <div class="card-title-desc">
+                                <h3>Our Changing Education</h3>
+                                <p>by Tanay Pratap</p>
+                            </div>
+                        </div>
+
+                        <div class="card-action-btn">
+                            <button class="purple-hover">READ</button>
+                            <button class="purple-hover">BOOKMARK</button>
+                            <button class="icon-hover"><i class="bi bi-heart"></i></button>
+                            <button class="icon-hover"><i class="bi bi-share"></i></button>
+                            <button class="icon-hover"><i class="bi bi-three-dots-vertical"></i></button>
+                        </div>
+
+                        <div class="overlay">Overlay</div>
+                    </div>
+                </div>
+
+                <div class="code-snippet">
+                    <code class="language-html">
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;
+            &lt;div class=&quot;img-v&quot;&gt;
+                &lt;img src=&quot;https://picsum.photos/170&quot; /&gt;
+                &lt;div class=&quot;new-badge top-left&quot;&gt;NEW&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-title-desc&quot;&gt;
+                &lt;h3&gt;Our Changing Education&lt;/h3&gt;
+                &lt;p&gt;by Tanay Pratap&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;card-action-btn&quot;&gt;
+            &lt;button class=&quot;purple-hover&quot;&gt;READ&lt;/button&gt;
+            &lt;button class=&quot;purple-hover&quot;&gt;BOOKMARK&lt;/button&gt;
+            &lt;button class=&quot;icon-hover&quot;&gt;&lt;i class=&quot;bi bi-heart&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class=&quot;icon-hover&quot;&gt;&lt;i class=&quot;bi bi-share&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class=&quot;icon-hover&quot;&gt;&lt;i class=&quot;bi bi-three-dots-vertical&quot;&gt;&lt;/i&gt;&lt;/button&gt;   
+        &lt;/div&gt;
+
+        &lt;div class=&quot;overlay&quot;&gt;Overlay&lt;/div&gt;
+    &lt;/div&gt;
+                </code>
+                </div>
+            </div>
+
+            <div class="main-content-container">
+                <h2>text only cards</h2>
+                <p>card with only text</p>
+                <hr />
+            </div>
+
+            <div class="display-flex">
+                <div class="display-component">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-desc">
+                                <h3>Our Changing Education</h3>
+                                <p>by Tanay Pratap</p>
+                            </div>
+                        </div>
+
+                        <div class="card-text">
+                            this card contains only text without any actions.
+                            Tanay Pratap is revolutionising education.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-snippet">
+                    <code class="language-html">
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;
+            &lt;div class=&quot;card-title-desc&quot;&gt;
+                &lt;h3&gt;Our Changing Education&lt;/h3&gt;
+                &lt;p&gt;by Tanay Pratap&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;card-text&quot;&gt;
+            this card contains only text without any actions.   
+            Tanay Pratap is revolutionising education.
+        &lt;/div&gt;
+    &lt;/div&gt;
+                </code>
+                </div>
+            </div>
+
+            <div class="main-content-container">
+                <h2>horizontal cards</h2>
+                <p>cards which are horizontal</p>
+                <hr />
+            </div>
+
+            <div class="display-flex">
+                <div class="display-component">
+                    <div class="card">
+                        <div class="card-header horizontal">
+                            <div class="img-h">
+                                <img src="https://picsum.photos/110" />
+                                <div class="new-badge top-left">NEW</div>
+                            </div>
+                            <div class="card-title-desc">
+                                <h3>Our Changing Education</h3>
+                                <p>by Tanay Pratap</p>
+                            </div>
+                        </div>
+
+                        <div class="card-action-btn">
+                            <button class="purple-hover">READ</button>
+                            <button class="purple-hover">BOOKMARK</button>
+                            <button class="icon-hover"><i class="bi bi-heart"></i></button>
+                            <button class="icon-hover"><i class="bi bi-share"></i></button>
+                            <button class="icon-hover"><i class="bi bi-three-dots-vertical"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-snippet">
+                    <code class="language-html">
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-header horizontal&quot;&gt;
+            &lt;div class=&quot;img-h&quot;&gt;
+                &lt;img src=&quot;https://picsum.photos/110&quot; /&gt;
+                &lt;div class=&quot;new-badge top-left&quot;&gt;NEW&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-title-desc&quot;&gt;
+                &lt;h3&gt;Our Changing Education&lt;/h3&gt;
+                &lt;p&gt;by Tanay Pratap&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;card-action-btn&quot;&gt;
+            &lt;button class=&quot;purple-hover&quot;&gt;READ&lt;/button&gt;
+            &lt;button class=&quot;purple-hover&quot;&gt;BOOKMARK&lt;/button&gt;
+            &lt;button class=&quot;icon-hover&quot;&gt;&lt;i class=&quot;bi bi-heart&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class=&quot;icon-hover&quot;&gt;&lt;i class=&quot;bi bi-share&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class=&quot;icon-hover&quot;&gt;&lt;i class=&quot;bi bi-three-dots-vertical&quot;&gt;&lt;/i&gt;&lt;/button&gt;   
+        &lt;/div&gt;
+    &lt;/div&gt;
+                </code>
+                </div>
+            </div>
+
+            <div class="main-content-container">
+                <h2>shadow cards</h2>
+                <p>cards which have a shadow</p>
+                <hr />
+            </div>
+
+            <div class="display-flex">
+                <div class="display-component">
+
+                    <div class="card shadow">
+                        <div class="card-header">
+                            <div class="img-v">
+                                <img src="https://picsum.photos/170" />
+                                <div class="new-badge top-left">NEW</div>
+                            </div>
+                            <div class="card-title-desc">
+                                <h3>Our Changing Education</h3>
+                                <p>by Tanay Pratap</p>
+                            </div>
+                        </div>
+
+                        <div class="card-action-btn">
+                            <button class="purple-hover">READ</button>
+                            <button class="purple-hover">BOOKMARK</button>
+                            <button class="icon-hover"><i class="bi bi-heart"></i></button>
+                            <button class="icon-hover"><i class="bi bi-share"></i></button>
+                            <button class="icon-hover"><i class="bi bi-three-dots-vertical"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="card shadow">
+                        <div class="card-header horizontal">
+                            <div class="img-h">
+                                <img src="https://picsum.photos/110" />
+                                <div class="new-badge top-left">NEW</div>
+                            </div>
+                            <div class="card-title-desc">
+                                <h3>Our Changing Education</h3>
+                                <p>by Tanay Pratap</p>
+                            </div>
+                        </div>
+
+                        <div class="card-action-btn">
+                            <button class="purple-hover">READ</button>
+                            <button class="purple-hover">BOOKMARK</button>
+                            <button class="icon-hover"><i class="bi bi-heart"></i></button>
+                            <button class="icon-hover"><i class="bi bi-share"></i></button>
+                            <button class="icon-hover"><i class="bi bi-three-dots-vertical"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-snippet">
+                    <code class="language-html">
+    &lt;div class=&quot;card shadow&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;
+            &lt;div class=&quot;img-v&quot;&gt;
+                &lt;img src=&quot;https://picsum.photos/170&quot; /&gt;
+                &lt;div class=&quot;new-badge top-left&quot;&gt;NEW&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-title-desc&quot;&gt;
+                &lt;h3&gt;Our Changing Education&lt;/h3&gt;
+                &lt;p&gt;by Tanay Pratap&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;card-action-btn&quot;&gt;
+            &lt;button class=&quot;purple-hover&quot;&gt;READ&lt;/button&gt;
+            &lt;button class=&quot;purple-hover&quot;&gt;BOOKMARK&lt;/button&gt;
+            &lt;button class=&quot;icon-hover&quot;&gt;&lt;i class=&quot;bi bi-heart&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class=&quot;icon-hover&quot;&gt;&lt;i class=&quot;bi bi-share&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class=&quot;icon-hover&quot;&gt;&lt;i class=&quot;bi bi-three-dots-vertical&quot;&gt;&lt;/i&gt;&lt;/button&gt;   
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class=&quot;card shadow&quot;&gt;
+        &lt;div class=&quot;card-header horizontal&quot;&gt;
+            &lt;div class=&quot;img-h&quot;&gt;
+                &lt;img src=&quot;https://picsum.photos/110&quot; /&gt;
+                &lt;div class=&quot;new-badge top-left&quot;&gt;NEW&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-title-desc&quot;&gt;
+                &lt;h3&gt;Our Changing Education&lt;/h3&gt;
+                &lt;p&gt;by Tanay Pratap&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;card-action-btn&quot;&gt;
+            &lt;button class=&quot;purple-hover&quot;&gt;READ&lt;/button&gt;
+            &lt;button class=&quot;purple-hover&quot;&gt;BOOKMARK&lt;/button&gt;
+            &lt;button class=&quot;icon-hover&quot;&gt;&lt;i class=&quot;bi bi-heart&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class=&quot;icon-hover&quot;&gt;&lt;i class=&quot;bi bi-share&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+            &lt;button class=&quot;icon-hover&quot;&gt;&lt;i class=&quot;bi bi-three-dots-vertical&quot;&gt;&lt;/i&gt;&lt;/button&gt;   
+        &lt;/div&gt;
+    &lt;/div&gt;
+                </code>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/prism.js"></script>
+</body>
+
+</html>
