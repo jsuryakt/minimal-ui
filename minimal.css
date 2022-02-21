@@ -20,6 +20,11 @@
   --blue-clr: #2196f3;
   --link-clr: #0070f3;
   --link-hover-clr: #0050a3;
+  --new-badge-clr: #0000ff;
+  --purple-clr: #6f00ff;
+  --purple-hover-clr: #faf6fd;
+  --icon-clr: #e4e4e4;
+  --purple-active-clr: #e7d4f5;
 }
 
 html,
@@ -143,6 +148,11 @@ code {
 .top-right {
   top: 5px;
   right: -7px;
+}
+
+.top-right-in {
+  top: 7px;
+  right: 7px;
 }
 
 .top-left {
@@ -289,7 +299,7 @@ code {
   width: 18.75rem;
   /* min-height: 25rem; */
   max-height: 31.25rem;
-  background-color: #ffffff;
+  background-color: var(--white-clr);
   display: flex;
   flex-direction: column;
 }
@@ -300,7 +310,7 @@ code {
 
 .card-header {
   border-radius: 0.3rem;
-  background-color: #ffffff;
+  background-color: var(--white-clr);
   display: flex;
   flex-direction: column;
 }
@@ -322,10 +332,6 @@ code {
   height: 6.875rem;
 }
 
-/* .card-img {
-  position: relative;
-} */
-
 .new-badge,
 .close-badge {
   position: absolute;
@@ -334,15 +340,15 @@ code {
 
 .new-badge {
   padding: 0.2rem;
-  background-color: #0000ff;
-  color: #ffffff;
+  background-color: var(--new-badge-clr);
+  color: var(--white-clr);
   border-radius: 0.3rem;
 }
 
 .close-badge {
   cursor: pointer;
-  background-color: #faf6fd;
-  color: #000000;
+  background-color: var(--under-clr);
+  color: var(--black-clr);
   border: none;
   border-radius: 50%;
   padding-top: 0.1rem;
@@ -351,7 +357,7 @@ code {
 }
 
 .close-badge:hover {
-  background-color: #bdbdbd;
+  background-color: var(--secondary-clr);
 }
 
 .card-title-desc {
@@ -368,7 +374,7 @@ code {
 }
 
 .card-title-desc p {
-  color: #808080;
+  color: var(--secondary-clr);
 }
 
 .card-action-btn button {
@@ -376,20 +382,20 @@ code {
   border: none;
   cursor: pointer;
   padding: 10px;
-  background-color: #ffffff;
+  background-color: var(--white-clr);
   border-radius: 0.3rem;
 }
 
 .purple-hover {
-  color: #6f00fffa;
+  color: var(--purple-clr);
 }
 
 .purple-hover:hover {
-  background-color: #faf6fd;
+  background-color: var(--purple-hover-clr);
 }
 
 .icon-hover:hover {
-  background-color: #e4e4e4;
+  background-color: var(--icon-clr);
 }
 
 .card-action-btn {
@@ -400,11 +406,11 @@ code {
 
 .card-header:hover {
   cursor: pointer;
-  background-color: #eceaea;
+  background-color: var(--bg-clr);
 }
 
 .purple-hover:active:focus {
-  background-color: #e7d4f5;
+  background-color: var(--purple-active-clr);
 }
 
 .overlay {
@@ -421,7 +427,7 @@ code {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
-  color: #cccccc;
+  color: var(--bg-clr);
   transition: 0.5s ease;
 }
 

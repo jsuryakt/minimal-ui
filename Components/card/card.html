@@ -6,46 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>card - minimal ui</title>
-    <link rel="stylesheet" href="/Components/install/install.css" />
-    <link rel="stylesheet" href="/prism.css" />
-    <link rel="stylesheet" href="/minimal.css" />
+    <link rel="stylesheet" href="/base.css" />
     <link rel="stylesheet" href="card.css" />
 </head>
 
 <body>
-    <a class="main-header-link" href="/index.html">
-        <header>
-            <h1 class="overlap">
-                minimal
-                <h1 class="under">UI</h1>
-            </h1>
-        </header>
-    </a>
+    <div class="main-header">
+        <a class="main-header-link" href="/index.html">
+            <header>
+                <h1 class="overlap">
+                    minimal
+                    <h1 class="under">UI</h1>
+                </h1>
+            </header>
+        </a>
+        <button id="bar" class="menu-bar" onclick="menu()"><i class="bi bi-list"></i></button>
+    </div>
 
     <div class="container">
         <div class="sidebar content">
+            <a class="sidebar-link" href="/components/install/install.html">install</a>
             <a class="sidebar-link" href="/components/avatar/avatar.html">avatar</a>
-            <a class="sidebar-link" href="/components/alert/alert.html"> alert </a>
-            <a class="sidebar-link" href="/components/badge/badge.html"> badge </a>
-            <a class="sidebar-link" href="/components/button/button.html"> button </a>
-            <a class="sidebar-link sidebar-active" href="/components/card/card.html"> card </a>
-            <a class="sidebar-link" href="/components/image/image.html"> image </a>
-            <a class="sidebar-link" href="/components/input/input.html"> input </a>
-            <a class="sidebar-link" href="/components/badge/badge.html">
-                text utilities
-            </a>
-            <a class="sidebar-link" href="/components/badge/badge.html"> lists </a>
-            <a class="sidebar-link" href="/components/badge/badge.html">
-                navigation
-            </a>
-            <a class="sidebar-link" href="/components/badge/badge.html"> modal </a>
-            <a class="sidebar-link" href="/components/badge/badge.html">
-                toast/notify/snackbar
-            </a>
-            <a class="sidebar-link" href="/components/badge/badge.html">
-                simplified grid
-            </a>
-            <a class="sidebar-link" href="/components/badge/badge.html"> badge </a>
+            <a class="sidebar-link" href="/components/alert/alert.html">alert</a>
+            <a class="sidebar-link" href="/components/badge/badge.html">badge</a>
+            <a class="sidebar-link" href="/components/button/button.html">button</a>
+            <a class="sidebar-link sidebar-active" href="/components/card/card.html">card</a>
+            <a class="sidebar-link" href="/components/image/image.html">image</a>
+            <a class="sidebar-link" href="/components/input/input.html">input</a>
+            <a class="sidebar-link" href="/components/typography/typography.html">typography</a>
+            <a class="sidebar-link" href="/components/navigation/navigation.html">navigation</a>
+            <a class="sidebar-link" href="/components/slider/slider.html">slider</a>
         </div>
 
         <div class="main content">
@@ -61,31 +51,32 @@
                 <p>these are cards with a badge</p>
             </div>
 
-            <div class="display-component">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="img-v">
-                            <img src="https://picsum.photos/170" />
-                            <div class="new-badge top-left">NEW</div>
+            <div class="display-flex">
+                <div class="display-component">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="img-v">
+                                <img src="https://picsum.photos/170" />
+                                <div class="new-badge top-left">NEW</div>
+                            </div>
+                            <div class="card-title-desc">
+                                <h3>Our Changing Education</h3>
+                                <p>by Tanay Pratap</p>
+                            </div>
                         </div>
-                        <div class="card-title-desc">
-                            <h3>Our Changing Education</h3>
-                            <p>by Tanay Pratap</p>
-                        </div>
-                    </div>
 
-                    <div class="card-action-btn">
-                        <button class="purple-hover">READ</button>
-                        <button class="purple-hover">BOOKMARK</button>
-                        <button class="icon-hover"><i class="bi bi-heart"></i></button>
-                        <button class="icon-hover"><i class="bi bi-share"></i></button>
-                        <button class="icon-hover"><i class="bi bi-three-dots-vertical"></i></button>
+                        <div class="card-action-btn">
+                            <button class="purple-hover">READ</button>
+                            <button class="purple-hover">BOOKMARK</button>
+                            <button class="icon-hover"><i class="bi bi-heart"></i></button>
+                            <button class="icon-hover"><i class="bi bi-share"></i></button>
+                            <button class="icon-hover"><i class="bi bi-three-dots-vertical"></i></button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="code-snippet">
-                <code class="language-html">
+                <div class="code-snippet">
+                    <code class="language-html">
     &lt;div class=&quot;card&quot;&gt;
         &lt;div class=&quot;card-header&quot;&gt;
             &lt;div class=&quot;img-v&quot;&gt;
@@ -107,6 +98,7 @@
         &lt;/div&gt;
     &lt;/div&gt;
                 </code>
+                </div>
             </div>
 
             <div class="main-content-container">
@@ -115,32 +107,33 @@
                 <hr />
             </div>
 
-            <div class="display-component">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="img-v">
-                            <img src="https://picsum.photos/170" />
-                            <div class="new-badge top-left">NEW</div>
-                            <button class="close-badge top-right-in"><i class="bi bi-x"></i></button>
+            <div class="display-flex">
+                <div class="display-component">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="img-v">
+                                <img src="https://picsum.photos/170" />
+                                <div class="new-badge top-left">NEW</div>
+                                <button class="close-badge top-right-in"><i class="bi bi-x"></i></button>
+                            </div>
+                            <div class="card-title-desc">
+                                <h3>Our Changing Education</h3>
+                                <p>by Tanay Pratap</p>
+                            </div>
                         </div>
-                        <div class="card-title-desc">
-                            <h3>Our Changing Education</h3>
-                            <p>by Tanay Pratap</p>
-                        </div>
-                    </div>
 
-                    <div class="card-action-btn">
-                        <button class="purple-hover">READ</button>
-                        <button class="purple-hover">BOOKMARK</button>
-                        <button class="icon-hover"><i class="bi bi-heart"></i></button>
-                        <button class="icon-hover"><i class="bi bi-share"></i></button>
-                        <button class="icon-hover"><i class="bi bi-three-dots-vertical"></i></button>
+                        <div class="card-action-btn">
+                            <button class="purple-hover">READ</button>
+                            <button class="purple-hover">BOOKMARK</button>
+                            <button class="icon-hover"><i class="bi bi-heart"></i></button>
+                            <button class="icon-hover"><i class="bi bi-share"></i></button>
+                            <button class="icon-hover"><i class="bi bi-three-dots-vertical"></i></button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="code-snippet">
-                <code class="language-html">
+                <div class="code-snippet">
+                    <code class="language-html">
     &lt;div class=&quot;card&quot;&gt;
         &lt;div class=&quot;card-header&quot;&gt;
             &lt;div class=&quot;img-v&quot;&gt;
@@ -163,6 +156,7 @@
         &lt;/div&gt;
     &lt;/div&gt;
                 </code>
+                </div>
             </div>
 
             <div class="main-content-container">
@@ -171,7 +165,8 @@
                 <hr />
             </div>
 
-            <div class="display-component">
+            <div class="display-flex">
+                <div class="display-component">
                     <div class="card">
                         <div class="card-header">
                             <div class="img-v">
@@ -194,10 +189,10 @@
 
                         <div class="overlay">Overlay</div>
                     </div>
-            </div>
+                </div>
 
-            <div class="code-snippet">
-                <code class="language-html">
+                <div class="code-snippet">
+                    <code class="language-html">
     &lt;div class=&quot;card&quot;&gt;
         &lt;div class=&quot;card-header&quot;&gt;
             &lt;div class=&quot;img-v&quot;&gt;
@@ -221,6 +216,7 @@
         &lt;div class=&quot;overlay&quot;&gt;Overlay&lt;/div&gt;
     &lt;/div&gt;
                 </code>
+                </div>
             </div>
 
             <div class="main-content-container">
@@ -229,24 +225,25 @@
                 <hr />
             </div>
 
-            <div class="display-component">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title-desc">
-                            <h3>Our Changing Education</h3>
-                            <p>by Tanay Pratap</p>
+            <div class="display-flex">
+                <div class="display-component">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title-desc">
+                                <h3>Our Changing Education</h3>
+                                <p>by Tanay Pratap</p>
+                            </div>
+                        </div>
+
+                        <div class="card-text">
+                            this card contains only text without any actions.
+                            Tanay Pratap is revolutionising education.
                         </div>
                     </div>
-
-                    <div class="card-text">
-                        this card contains only text without any actions.
-                        Tanay Pratap is revolutionising education.
-                    </div>
                 </div>
-            </div>
 
-            <div class="code-snippet">
-                <code class="language-html">
+                <div class="code-snippet">
+                    <code class="language-html">
     &lt;div class=&quot;card&quot;&gt;
         &lt;div class=&quot;card-header&quot;&gt;
             &lt;div class=&quot;card-title-desc&quot;&gt;
@@ -261,6 +258,7 @@
         &lt;/div&gt;
     &lt;/div&gt;
                 </code>
+                </div>
             </div>
 
             <div class="main-content-container">
@@ -269,31 +267,32 @@
                 <hr />
             </div>
 
-            <div class="display-component">
-                <div class="card">
-                    <div class="card-header horizontal">
-                        <div class="img-h">
-                            <img src="https://picsum.photos/110" />
-                            <div class="new-badge top-left">NEW</div>
+            <div class="display-flex">
+                <div class="display-component">
+                    <div class="card">
+                        <div class="card-header horizontal">
+                            <div class="img-h">
+                                <img src="https://picsum.photos/110" />
+                                <div class="new-badge top-left">NEW</div>
+                            </div>
+                            <div class="card-title-desc">
+                                <h3>Our Changing Education</h3>
+                                <p>by Tanay Pratap</p>
+                            </div>
                         </div>
-                        <div class="card-title-desc">
-                            <h3>Our Changing Education</h3>
-                            <p>by Tanay Pratap</p>
-                        </div>
-                    </div>
 
-                    <div class="card-action-btn">
-                        <button class="purple-hover">READ</button>
-                        <button class="purple-hover">BOOKMARK</button>
-                        <button class="icon-hover"><i class="bi bi-heart"></i></button>
-                        <button class="icon-hover"><i class="bi bi-share"></i></button>
-                        <button class="icon-hover"><i class="bi bi-three-dots-vertical"></i></button>
+                        <div class="card-action-btn">
+                            <button class="purple-hover">READ</button>
+                            <button class="purple-hover">BOOKMARK</button>
+                            <button class="icon-hover"><i class="bi bi-heart"></i></button>
+                            <button class="icon-hover"><i class="bi bi-share"></i></button>
+                            <button class="icon-hover"><i class="bi bi-three-dots-vertical"></i></button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="code-snippet">
-                <code class="language-html">
+                <div class="code-snippet">
+                    <code class="language-html">
     &lt;div class=&quot;card&quot;&gt;
         &lt;div class=&quot;card-header horizontal&quot;&gt;
             &lt;div class=&quot;img-h&quot;&gt;
@@ -315,6 +314,7 @@
         &lt;/div&gt;
     &lt;/div&gt;
                 </code>
+                </div>
             </div>
 
             <div class="main-content-container">
@@ -323,53 +323,54 @@
                 <hr />
             </div>
 
-            <div class="display-component">
+            <div class="display-flex">
+                <div class="display-component">
 
-                <div class="card shadow">
-                    <div class="card-header">
-                        <div class="img-v">
-                            <img src="https://picsum.photos/170" />
-                            <div class="new-badge top-left">NEW</div>
+                    <div class="card shadow">
+                        <div class="card-header">
+                            <div class="img-v">
+                                <img src="https://picsum.photos/170" />
+                                <div class="new-badge top-left">NEW</div>
+                            </div>
+                            <div class="card-title-desc">
+                                <h3>Our Changing Education</h3>
+                                <p>by Tanay Pratap</p>
+                            </div>
                         </div>
-                        <div class="card-title-desc">
-                            <h3>Our Changing Education</h3>
-                            <p>by Tanay Pratap</p>
+
+                        <div class="card-action-btn">
+                            <button class="purple-hover">READ</button>
+                            <button class="purple-hover">BOOKMARK</button>
+                            <button class="icon-hover"><i class="bi bi-heart"></i></button>
+                            <button class="icon-hover"><i class="bi bi-share"></i></button>
+                            <button class="icon-hover"><i class="bi bi-three-dots-vertical"></i></button>
                         </div>
                     </div>
 
-                    <div class="card-action-btn">
-                        <button class="purple-hover">READ</button>
-                        <button class="purple-hover">BOOKMARK</button>
-                        <button class="icon-hover"><i class="bi bi-heart"></i></button>
-                        <button class="icon-hover"><i class="bi bi-share"></i></button>
-                        <button class="icon-hover"><i class="bi bi-three-dots-vertical"></i></button>
+                    <div class="card shadow">
+                        <div class="card-header horizontal">
+                            <div class="img-h">
+                                <img src="https://picsum.photos/110" />
+                                <div class="new-badge top-left">NEW</div>
+                            </div>
+                            <div class="card-title-desc">
+                                <h3>Our Changing Education</h3>
+                                <p>by Tanay Pratap</p>
+                            </div>
+                        </div>
+
+                        <div class="card-action-btn">
+                            <button class="purple-hover">READ</button>
+                            <button class="purple-hover">BOOKMARK</button>
+                            <button class="icon-hover"><i class="bi bi-heart"></i></button>
+                            <button class="icon-hover"><i class="bi bi-share"></i></button>
+                            <button class="icon-hover"><i class="bi bi-three-dots-vertical"></i></button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card shadow">
-                    <div class="card-header horizontal">
-                        <div class="img-h">
-                            <img src="https://picsum.photos/110" />
-                            <div class="new-badge top-left">NEW</div>
-                        </div>
-                        <div class="card-title-desc">
-                            <h3>Our Changing Education</h3>
-                            <p>by Tanay Pratap</p>
-                        </div>
-                    </div>
-
-                    <div class="card-action-btn">
-                        <button class="purple-hover">READ</button>
-                        <button class="purple-hover">BOOKMARK</button>
-                        <button class="icon-hover"><i class="bi bi-heart"></i></button>
-                        <button class="icon-hover"><i class="bi bi-share"></i></button>
-                        <button class="icon-hover"><i class="bi bi-three-dots-vertical"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="code-snippet">
-                <code class="language-html">
+                <div class="code-snippet">
+                    <code class="language-html">
     &lt;div class=&quot;card shadow&quot;&gt;
         &lt;div class=&quot;card-header&quot;&gt;
             &lt;div class=&quot;img-v&quot;&gt;
@@ -413,6 +414,7 @@
         &lt;/div&gt;
     &lt;/div&gt;
                 </code>
+                </div>
             </div>
 
         </div>
