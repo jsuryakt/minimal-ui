@@ -11,14 +11,17 @@
 </head>
 
 <body>
-    <a class="main-header-link" href="/index.html">
-        <header>
-            <h1 class="overlap">
-                minimal
-                <h1 class="under">UI</h1>
-            </h1>
-        </header>
-    </a>
+    <div class="main-header">
+        <a class="main-header-link" href="/index.html">
+            <header>
+                <h1 class="overlap">
+                    minimal
+                    <h1 class="under">UI</h1>
+                </h1>
+            </header>
+        </a>
+        <button id="bar" class="menu-bar" onclick="menu()"><i class="bi bi-list"></i></button>
+    </div>
 
     <div class="container">
         <div class="sidebar content">
@@ -49,26 +52,26 @@
                 <p>Simple Alerts can be created using alert class, followed by the variant name.</p>
             </div>
             <div class="display-flex">
-            <div class="display-component">
-                <div class="alert primary">
-                    <strong>Primary! </strong> This is a Primary Alert
+                <div class="display-component">
+                    <div class="alert primary">
+                        <strong>Primary! </strong> This is a Primary Alert
+                    </div>
+
+                    <div class="alert error">
+                        <strong>Error! </strong> This is an Error Alert
+                    </div>
+
+                    <div class="alert success">
+                        <strong>Success! </strong> This is a Success Alert
+                    </div>
+
+                    <div class="alert warning">
+                        <strong>Warning!</strong> This is a Warning Alert
+                    </div>
                 </div>
 
-                <div class="alert error">
-                    <strong>Error! </strong> This is an Error Alert
-                </div>
-
-                <div class="alert success">
-                    <strong>Success! </strong> This is a Success Alert
-                </div>
-
-                <div class="alert warning">
-                    <strong>Warning!</strong> This is a Warning Alert
-                </div>
-            </div>
-
-            <div class="code-snippet">
-                <code class="language-html">
+                <div class="code-snippet">
+                    <code class="language-html">
     &lt;div class=&quot;alert primary&quot;&gt;
         &lt;strong&gt;Primary!&lt;/strong&gt; This is a Primary Alert   
     &lt;/div&gt;
@@ -85,7 +88,7 @@
         &lt;strong&gt;Warning!&lt;/strong&gt; This is a Warning Alert
     &lt;/div&gt;
                 </code>
-            </div>
+                </div>
             </div>
         </div>
 
