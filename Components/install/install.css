@@ -1,22 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800");
-
-html,
-body {
-  margin: 0;
-  scroll-behavior: smooth;
-  font-family: "Open Sans", sans-serif;
-}
-
-input,
-textarea,
-button {
-  font-family: inherit;
-}
-
-h1,
-p {
-  margin: 0;
-}
+@import "/minimal.css";
 
 .main-header-link {
     text-decoration: none;
@@ -32,12 +15,12 @@ header {
   position: relative;
   font-size: 2rem;
   font-weight: 800;
-  color: #555555;
+  color: var(--overlap-clr);
 }
 
 .under {
   margin-top: 0.5rem;
-  color: #eeeeee;
+  color: var(--under-clr);
   left: 6.3rem;
   font-size: 5rem;
   font-weight: 900;
@@ -46,12 +29,12 @@ header {
 }
 
 .container {
-  margin: 20px;
+  margin: 1.25rem;
   display: flex;
 }
 
 .sidebar {
-  flex-basis: 200px;
+  flex-basis: 12.5rem;
   margin-right: 1rem;
   display: flex;
   flex-direction: column;
@@ -69,42 +52,42 @@ header {
   display: flex;
   justify-content: center;
   text-decoration: none;
-  color: #000000;
+  color: var(--black);
   border-radius: 2rem;
   padding: 0.5rem;
 }
 
 .sidebar-active {
-  background-color: #cccccc;
+  background-color: var(--bg-clr);
 }
 
 .sidebar-link:hover {
-  background-color: #dddddd;
+  background-color: var(--side-hover);
 }
 
 .sidebar-link:active:hover {
-  background-color: #cccccc;
+  background-color: var(--bg-clr);
 }
 
 .main {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .content {
   font-weight: 600;
   padding: 1rem;
   border-radius: 1rem;
-  background-color: #eeeeee;
+  background-color: var(--under-clr);
 }
 
 .code-snippet {
   width: fit-content;
   margin-top: 1rem;
   padding: 0.5rem;
-  background-color: #2d2d2d;
+  background-color: var(--code-snippet);
   border-radius: 0.3rem;
 }
 
