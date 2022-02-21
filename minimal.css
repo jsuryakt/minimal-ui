@@ -1,3 +1,5 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800");
+
 :root {
   --bg-clr: #cccccc;
   --overlap-clr: #555555;
@@ -6,6 +8,9 @@
   --white: #ffffff;
   --side-hover: #dddddd;
   --code-snippet: #2d2d2d;
+  --error: #f5222d;
+  --success: #52c41a;
+  --warning: #faad14;
 }
 
 html,
@@ -21,7 +26,8 @@ button {
   font-family: inherit;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin: 0;
 }
 
@@ -44,35 +50,48 @@ code {
   margin: 1rem;
 }
 
-/* avatar css */
+/* avatar */
 
 .avatar {
   border-radius: 50%;
 }
 
 .avatar-sm {
-    width: 3.125rem; 
-    /* 50px */
-    height: 3.125rem;
+  width: 3.125rem;
+  height: 3.125rem;
 }
 
 .avatar-md {
-    width: 4.688rem;
-    /* 75px */
-    height: 4.688rem;
+  width: 4.688rem;
+  height: 4.688rem;
 }
 
 .avatar-lg {
-    width: 6.25rem;
-    /* 100px */
-    height: 6.25rem;
+  width: 6.25rem;
+  height: 6.25rem;
 }
 
-.alert{
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    width: 25rem;
-    padding: 1rem;
-    border-radius: 0.3rem;
+/* alert  */
+
+.alert {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 25rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  color: var(--white);
+}
+
+.primary {
+  background-color: var(--overlap-clr);
+}
+.error {
+  background-color: var(--error);
+}
+.success {
+  background-color: var(--success);
+}
+.warning {
+  background-color: var(--warning);
 }
