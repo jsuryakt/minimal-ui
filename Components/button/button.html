@@ -24,29 +24,17 @@
 
     <div class="container">
         <div class="sidebar content">
-            <a class="sidebar-link" href="/components/install/install.html"> install </a>
+            <a class="sidebar-link" href="#">install</a>
             <a class="sidebar-link" href="/components/avatar/avatar.html">avatar</a>
-            <a class="sidebar-link" href="/components/alert/alert.html"> alert </a>
-            <a class="sidebar-link" href="/components/badge/badge.html"> badge </a>
-            <a class="sidebar-link sidebar-active" href="/components/button/button.html"> button </a>
-            <a class="sidebar-link" href="/components/badge/badge.html"> card </a>
-            <a class="sidebar-link" href="/components/badge/badge.html"> image </a>
-            <a class="sidebar-link" href="/components/badge/badge.html"> input </a>
-            <a class="sidebar-link" href="/components/badge/badge.html">
-                text utilities
-            </a>
-            <a class="sidebar-link" href="/components/badge/badge.html"> lists </a>
-            <a class="sidebar-link" href="/components/badge/badge.html">
-                navigation
-            </a>
-            <a class="sidebar-link" href="/components/badge/badge.html"> modal </a>
-            <a class="sidebar-link" href="/components/badge/badge.html">
-                toast/notify/snackbar
-            </a>
-            <a class="sidebar-link" href="/components/badge/badge.html">
-                simplified grid
-            </a>
-            <a class="sidebar-link" href="/components/badge/badge.html"> badge </a>
+            <a class="sidebar-link" href="/components/alert/alert.html">alert</a>
+            <a class="sidebar-link" href="/components/badge/badge.html">badge</a>
+            <a class="sidebar-link sidebar-active" href="/components/button/button.html">button</a>
+            <a class="sidebar-link" href="/components/card/card.html">card</a>
+            <a class="sidebar-link" href="/components/image/image.html">image</a>
+            <a class="sidebar-link" href="/components/input/input.html">input</a>
+            <a class="sidebar-link" href="/components/typography/typography.html">typography</a>
+            <a class="sidebar-link" href="/components/navigation/navigation.html">navigation</a>
+            <a class="sidebar-link" href="/components/slider/slider.html">slider</a>
         </div>
 
         <div class="main content">
@@ -61,19 +49,20 @@
                     actions that are primary to your app.</p>
             </div>
 
-            <div class="display-component">
-                <button class="btn btn-primary">Primary</button>
-                <button class="btn btn-secondary">Secondary</button>
-                <button class="btn btn-success">Success</button>
-                <button class="btn btn-danger">Danger</button>
-                <button class="btn btn-warning">Warning</button>
-                <button class="btn btn-info">Info</button>
-                <button class="btn btn-light">Light</button>
-                <button class="btn btn-dark">Dark</button>
-            </div>
+            <div class="display-flex">
+                <div class="display-component">
+                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn btn-secondary">Secondary</button>
+                    <button class="btn btn-success">Success</button>
+                    <button class="btn btn-danger">Danger</button>
+                    <button class="btn btn-warning">Warning</button>
+                    <button class="btn btn-info">Info</button>
+                    <button class="btn btn-light">Light</button>
+                    <button class="btn btn-dark">Dark</button>
+                </div>
 
-            <div class="code-snippet">
-                <code class="language-html">
+                <div class="code-snippet">
+                    <code class="language-html">
     &lt;button class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
     &lt;button class=&quot;btn btn-secondary&quot;&gt;Secondary&lt;/button&gt;    
     &lt;button class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
@@ -83,61 +72,70 @@
     &lt;button class=&quot;btn btn-light&quot;&gt;Light&lt;/button&gt;
     &lt;button class=&quot;btn btn-dark&quot;&gt;Dark&lt;/button&gt;
                 </code>
+                </div>
             </div>
-            <!-- &lt;button class=&quot;btn btn-link&quot;&gt;Link&lt;/button&gt; -->
+
+            <hr/>
 
             <div class="main-content-container">
                 <h2>link button</h2>
                 <p>want to attach a link action, at a button tap? use link button</p>
-                <hr />
             </div>
 
-            <div class="display-component">
-                <a href="#"><button class="btn btn-link">LINK</button></a>
-            </div>
+            <div class="display-flex">
+                <div class="display-component">
+                    <a href="#"><button class="btn btn-link">LINK</button></a>
+                </div>
 
-            <div class="code-snippet">
-                <code class="language-html">
+                <div class="code-snippet">
+                    <code class="language-html">
     &lt;a href=&quot;#&quot;&gt;&lt;button class=&quot;btn btn-link&quot;&gt;LINK&lt;/button&gt;&lt;/a&gt;    
                 </code>
+                </div>
             </div>
+
+            <hr />
 
             <div class="main-content-container">
                 <h2>icon button</h2>
                 <p>icon alongside a text in a button</p>
-                <hr />
             </div>
 
-            <div class="display-component">
-                <button class="btn btn-icon btn-success"><i class="bi bi-download"></i>Download</button>
-            </div>
+            <div class="display-flex">
+                <div class="display-component">
+                    <button class="btn btn-icon btn-success"><i class="bi bi-download"></i>Download</button>
+                </div>
 
-            <div class="code-snippet">
-                <code class="language-html">
+                <div class="code-snippet">
+                    <code class="language-html">
     &lt;button class=&quot;btn btn-icon btn-success&quot;&gt;&lt;i class=&quot;bi bi-download&quot;&gt;&lt;/i&gt;Download&lt;/button&gt;    
                 </code>
+                </div>
             </div>
+            
+            <hr />
 
             <div class="main-content-container">
                 <h2>floating action button</h2>
-                <p>a floating action button (FAB) performs the primary, or most common, action on a screen. It appears in front of all screen content, typically as a circular shape with an icon in its center</p>
-                <hr />
+                <p>a floating action button (FAB) performs the primary, or most common, action on a screen. It appears
+                    in front of all screen content, typically as a circular shape with an icon in its center</p>
             </div>
+            <div class="display-flex">
+                <div class="display-component">
+                    <button class="btn btn-float"><i class="bi bi-plus"></i></button>
+                    <button class="btn btn-float"><i class="bi bi-heart"></i></button>
+                    <button class="btn btn-float"><i class="bi bi-heart-fill"></i></button>
+                    <button class="btn btn-float"><i class="bi bi-send-fill"></i></button>
+                </div>
 
-            <div class="display-component">
-                <button class="btn btn-float"><i class="bi bi-plus"></i></button>
-                <button class="btn btn-float"><i class="bi bi-heart"></i></button>
-                <button class="btn btn-float"><i class="bi bi-heart-fill"></i></button>
-                <button class="btn btn-float"><i class="bi bi-send-fill"></i></button>
-            </div>
-
-            <div class="code-snippet">
-                <code class="language-html">
+                <div class="code-snippet">
+                    <code class="language-html">
     &lt;button class=&quot;btn btn-float&quot;&gt;&lt;i class=&quot;bi bi-plus&quot;&gt;&lt;/i&gt;&lt;/button&gt;
     &lt;button class=&quot;btn btn-float&quot;&gt;&lt;i class=&quot;bi bi-heart&quot;&gt;&lt;/i&gt;&lt;/button&gt;
     &lt;button class=&quot;btn btn-float&quot;&gt;&lt;i class=&quot;bi bi-heart-fill&quot;&gt;&lt;/i&gt;&lt;/button&gt;    
     &lt;button class=&quot;btn btn-float&quot;&gt;&lt;i class=&quot;bi bi-send-fill&quot;&gt;&lt;/i&gt;&lt;/button&gt;
                 </code>
+                </div>
             </div>
 
         </div>

@@ -5,12 +5,21 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>install- minimal ui</title>
-  <link rel="stylesheet" href="install.css" />
-  <link rel="stylesheet" href="/prism.css" />
+  <title>install - minimal ui</title>
+  <link rel="stylesheet" href="/base.css" />
+
+  <style>
+    @media screen and (max-width: 620px) {
+      .code-snippet {
+        width: 18rem;
+        overflow-x: scroll;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <div class="main-header">
   <a class="main-header-link" href="/index.html">
     <header>
       <h1 class="overlap">
@@ -19,32 +28,22 @@
       </h1>
     </header>
   </a>
+  <button id="bar" class="menu-bar" onclick="menu()"><i class="bi bi-list"></i></button>
+  </div>
 
   <div class="container">
     <div class="sidebar content">
-      <a class="sidebar-link sidebar-active" href="#"> install </a>
+      <a class="sidebar-link sidebar-active" href="#">install</a>
       <a class="sidebar-link" href="/components/avatar/avatar.html">avatar</a>
-      <a class="sidebar-link" href="/components/alert/alert.html"> alert </a>
-      <a class="sidebar-link" href="/components/badge/badge.html"> badge </a>
-      <a class="sidebar-link" href="/components/button/button.html"> button </a>
-      <a class="sidebar-link" href="/components/badge/badge.html"> card </a>
-      <a class="sidebar-link" href="/components/badge/badge.html"> image </a>
-      <a class="sidebar-link" href="/components/badge/badge.html"> input </a>
-      <a class="sidebar-link" href="/components/badge/badge.html">
-        text utilities
-      </a>
-      <a class="sidebar-link" href="/components/badge/badge.html"> lists </a>
-      <a class="sidebar-link" href="/components/badge/badge.html">
-        navigation
-      </a>
-      <a class="sidebar-link" href="/components/badge/badge.html"> modal </a>
-      <a class="sidebar-link" href="/components/badge/badge.html">
-        toast/notify/snackbar
-      </a>
-      <a class="sidebar-link" href="/components/badge/badge.html">
-        simplified grid
-      </a>
-      <a class="sidebar-link" href="/components/badge/badge.html"> badge </a>
+      <a class="sidebar-link" href="/components/alert/alert.html">alert</a>
+      <a class="sidebar-link" href="/components/badge/badge.html">badge</a>
+      <a class="sidebar-link" href="/components/button/button.html">button</a>
+      <a class="sidebar-link" href="/components/card/card.html">card</a>
+      <a class="sidebar-link" href="/components/image/image.html">image</a>
+      <a class="sidebar-link" href="/components/input/input.html">input</a>
+      <a class="sidebar-link" href="/components/typography/typography.html">typography</a>
+      <a class="sidebar-link" href="/components/navigation/navigation.html">navigation</a>
+      <a class="sidebar-link" href="/components/slider/slider.html">slider</a>
     </div>
 
     <div class="main content">
@@ -54,9 +53,12 @@
           To install minimal-ui, you need to include the following link in
           your head tag:
         </p>
+      </div>
+      <div class="display-flex">
         <div class="code-snippet">
-          <code
-            class="language-html"> &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jsuryakt/minimal-ui@master/minimal.css" /&gt;</code>
+          <code class="language-html">
+  &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jsuryakt/minimal-ui@master/minimal.css" /&gt;  
+          </code>
         </div>
       </div>
     </div>

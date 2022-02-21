@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>alert - minimal ui</title>
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="alert.css" />
+</head>
+
+<body>
+    <a class="main-header-link" href="/index.html">
+        <header>
+            <h1 class="overlap">
+                minimal
+                <h1 class="under">UI</h1>
+            </h1>
+        </header>
+    </a>
+
+    <div class="container">
+        <div class="sidebar content">
+            <a class="sidebar-link" href="/components/install/install.html">install</a>
+            <a class="sidebar-link" href="/components/avatar/avatar.html">avatar</a>
+            <a class="sidebar-link sidebar-active" href="/components/alert/alert.html">alert</a>
+            <a class="sidebar-link" href="/components/badge/badge.html">badge</a>
+            <a class="sidebar-link" href="/components/button/button.html">button</a>
+            <a class="sidebar-link" href="/components/card/card.html">card</a>
+            <a class="sidebar-link" href="/components/image/image.html">image</a>
+            <a class="sidebar-link" href="/components/input/input.html">input</a>
+            <a class="sidebar-link" href="/components/typography/typography.html">typography</a>
+            <a class="sidebar-link" href="/components/navigation/navigation.html">navigation</a>
+            <a class="sidebar-link" href="/components/slider/slider.html">slider</a>
+        </div>
+
+        <div class="main content">
+            <div class="main-content-container">
+                <h1>Alert</h1>
+                <p>An alert displays a short, important message in a way that attracts the user's attention without
+                    interrupting the user's task.</p>
+            </div>
+
+            <hr />
+
+            <div class="main-content-container">
+                <h2>Simple Alert</h2>
+                <p>Simple Alerts can be created using alert class, followed by the variant name.</p>
+            </div>
+            <div class="display-flex">
+            <div class="display-component">
+                <div class="alert primary">
+                    <strong>Primary! </strong> This is a Primary Alert
+                </div>
+
+                <div class="alert error">
+                    <strong>Error! </strong> This is an Error Alert
+                </div>
+
+                <div class="alert success">
+                    <strong>Success! </strong> This is a Success Alert
+                </div>
+
+                <div class="alert warning">
+                    <strong>Warning!</strong> This is a Warning Alert
+                </div>
+            </div>
+
+            <div class="code-snippet">
+                <code class="language-html">
+    &lt;div class=&quot;alert primary&quot;&gt;
+        &lt;strong&gt;Primary!&lt;/strong&gt; This is a Primary Alert   
+    &lt;/div&gt;
+
+    &lt;div class=&quot;alert error&quot;&gt;
+        &lt;strong&gt;Error!&lt;/strong&gt; This is an Error Alert
+    &lt;/div&gt;
+
+    &lt;div class=&quot;alert success&quot;&gt;
+        &lt;strong&gt;Success!&lt;/strong&gt; This is a Success Alert
+    &lt;/div&gt;
+
+    &lt;div class=&quot;alert warning&quot;&gt;
+        &lt;strong&gt;Warning!&lt;/strong&gt; This is a Warning Alert
+    &lt;/div&gt;
+                </code>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/prism.js"></script>
+</body>
+
+</html>
