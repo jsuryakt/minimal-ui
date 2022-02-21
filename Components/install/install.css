@@ -1,7 +1,12 @@
 @import "/minimal.css";
 
 .main-header-link {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
 }
 
 header {
@@ -33,6 +38,8 @@ header {
 }
 
 .sidebar {
+  position: sticky;
+  top: 1rem;
   /* flex-basis: 12.5rem; */
   margin-right: 1rem;
   display: flex;
@@ -85,7 +92,7 @@ header {
 }
 
 .code-snippet {
-  width: fit-content;
+  overflow-x: scroll;
   margin-top: 1rem;
   padding: 0.5rem;
   background-color: var(--code-snippet-clr);
@@ -94,4 +101,50 @@ header {
 
 .main-content-container {
   padding-left: 1rem;
+}
+
+.display-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr {
+  width: 96%;
+}
+
+#bar {
+  padding: 1rem;
+  font-size: 3rem;
+  display: none;
+  border: none;
+  background-color: var(--white-clr);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 621px) {
+  .sidebar {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .sidebar {
+    display: none;
+    margin: 0.5rem;
+  }
+
+  #bar {
+    float: right;
+    display: block;
+  }
+
+  .main-content-container {
+    padding: 0;
+  }
+
+  .container {
+    margin: 1rem 0rem;
+    flex-direction: column;
+  }
 }

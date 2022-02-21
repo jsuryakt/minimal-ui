@@ -69,3 +69,15 @@ header p {
   background-color: var(--black-clr);
   color: var(--white-clr);
 }
+
+@media screen and (max-width: 620px) {
+.header-main {
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.under {
+  right: -0.5rem;
+}
+}

@@ -7,9 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>install - minimal ui</title>
   <link rel="stylesheet" href="/base.css" />
+
+  <style>
+    @media screen and (max-width: 620px) {
+      .code-snippet {
+        width: 18rem;
+        overflow-x: scroll;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <div class="main-header">
   <a class="main-header-link" href="/index.html">
     <header>
       <h1 class="overlap">
@@ -18,6 +28,8 @@
       </h1>
     </header>
   </a>
+  <button id="bar" class="menu-bar" onclick="menu()"><i class="bi bi-list"></i></button>
+  </div>
 
   <div class="container">
     <div class="sidebar content">
@@ -41,9 +53,12 @@
           To install minimal-ui, you need to include the following link in
           your head tag:
         </p>
+      </div>
+      <div class="display-flex">
         <div class="code-snippet">
-          <code
-            class="language-html"> &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jsuryakt/minimal-ui@master/minimal.css" /&gt;</code>
+          <code class="language-html">
+  &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jsuryakt/minimal-ui@master/minimal.css" /&gt;  
+          </code>
         </div>
       </div>
     </div>
