@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navigation - minimal ui</title>
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="navigation.css" />
+</head>
+
+<body>
+    <div class="main-header">
+        <a class="main-header-link" href="/index.html">
+            <header>
+                <h1 class="overlap">
+                    minimal
+                    <h1 class="under">UI</h1>
+                </h1>
+            </header>
+        </a>
+        <button id="bar" class="menu-bar" onclick="menu()"><i class="bi bi-list"></i></button>
+    </div>
+
+    <div class="container">
+        <div class="sidebar content">
+            <a class="sidebar-link" href="/components/install/install.html">install</a>
+            <a class="sidebar-link" href="/components/avatar/avatar.html">avatar</a>
+            <a class="sidebar-link" href="/components/alert/alert.html">alert</a>
+            <a class="sidebar-link" href="/components/badge/badge.html">badge</a>
+            <a class="sidebar-link" href="/components/button/button.html">button</a>
+            <a class="sidebar-link" href="/components/card/card.html">card</a>
+            <a class="sidebar-link" href="/components/image/image.html">image</a>
+            <a class="sidebar-link" href="/components/input/input.html">input</a>
+            <a class="sidebar-link" href="/components/typography/typography.html">typography</a>
+            <a class="sidebar-link sidebar-active" href="/components/navigation/navigation.html">navigation</a>
+            <a class="sidebar-link" href="/components/slider/slider.html">slider</a>
+        </div>
+
+        <div class="main content">
+            <div class="main-content-container">
+                <h1>navigation</h1>
+                <p>navigation bar is used to navigate through the web apps or websites</p>
+                <hr />
+            </div>
+            <div class="display-component">
+                <div class="nav-bar">
+                    <div class="nav-name">
+                        minimal nav
+                    </div>
+                    <div class="nav-ele">
+                        <a href="#"><button class="btn btn-transparent">home</button></a>
+                        <a href="#"><button class="btn btn-transparent">work</button></a>
+                        <a href="#"><button class="btn btn-transparent">contact</button></a>
+                        <img class="avatar avatar-sm" src="https://picsum.photos/50">
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-snippet">
+                <code class="language-html">
+    &lt;div class=&quot;nav-bar&quot;&gt;
+        &lt;div class=&quot;nav-name&quot;&gt;
+            minimal nav
+        &lt;/div&gt;
+        &lt;div class=&quot;nav-ele&quot;&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;button class=&quot;btn btn-transparent&quot;&gt;home&lt;/button&gt;&lt;/a&gt; 
+            &lt;a href=&quot;#&quot;&gt;&lt;button class=&quot;btn btn-transparent&quot;&gt;work&lt;/button&gt;&lt;/a&gt; 
+            &lt;a href=&quot;#&quot;&gt;&lt;button class=&quot;btn btn-transparent&quot;&gt;contact&lt;/button&gt;&lt;/a&gt;    
+            &lt;img class=&quot;avatar avatar-sm&quot; src=&quot;https://picsum.photos/50&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                </code>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/prism.js"></script>
+</body>
+
+</html>
