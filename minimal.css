@@ -587,3 +587,41 @@ input {
   padding: 1rem;
   color: var(--white-clr);
 }
+
+/* slider */
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 21px;
+  height: 21px;
+  background: var(--overlap-clr);
+  border-radius: 0.3rem;
+}
+
+.slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  width: 21px;
+  height: 21px;
+  background: var(--overlap-clr);
+  border-radius: 0.3rem;
+}
+
+.round-slider {
+  border-radius: 1rem;
+}
+
+.round-slider::-webkit-slider-thumb {
+  border-radius: 50%;
+}
+
+.round-slider::-moz-range-thumb {
+  border-radius: 50%;
+}
