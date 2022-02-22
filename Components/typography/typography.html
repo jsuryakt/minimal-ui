@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>typography - minimal ui</title>
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="typography.css" />
+</head>
+
+<body>
+    <div class="main-header">
+        <a class="main-header-link" href="/index.html">
+            <header>
+                <h1 class="overlap">
+                    minimal
+                    <h1 class="under">UI</h1>
+                </h1>
+            </header>
+        </a>
+        <button id="bar" class="menu-bar" onclick="menu()"><i class="bi bi-list"></i></button>
+    </div>
+
+    <div class="container">
+        <div class="sidebar content">
+            <a class="sidebar-link" href="/components/install/install.html">install</a>
+            <a class="sidebar-link" href="/components/avatar/avatar.html">avatar</a>
+            <a class="sidebar-link" href="/components/alert/alert.html">alert</a>
+            <a class="sidebar-link" href="/components/badge/badge.html">badge</a>
+            <a class="sidebar-link" href="/components/button/button.html">button</a>
+            <a class="sidebar-link" href="/components/card/card.html">card</a>
+            <a class="sidebar-link" href="/components/image/image.html">image</a>
+            <a class="sidebar-link" href="/components/input/input.html">input</a>
+            <a class="sidebar-link sidebar-active" href="/components/typography/typography.html">typography</a>
+            <a class="sidebar-link" href="/components/navigation/navigation.html">navigation</a>
+            <a class="sidebar-link" href="/components/slider/slider.html">slider</a>
+        </div>
+
+        <div class="main content">
+            <div class="main-content-container">
+                <h1>typography</h1>
+                <p>typography, including global settings, headings, body text, lists, and more.
+                    font used is "Open Sans, sans serif".
+                </p>
+                <hr/>
+                <p>There are 5 types of typography</p>
+            </div>
+            <div class="display-flex">
+                <div class="display-component">
+                    <h1 class="main-h1">This is Heading 1</h1>
+                    <h2 class="main-h2">This is Heading 2</h2>
+                    <h3 class="main-h3">This is Heading 3 </h3>
+                    <h4 class="main-h4">This is Heading 4</h4>
+                    <h5 class="main-h5">This is Heading 5</h5>
+                </div>
+
+                <div class="code-snippet">
+                    <code class="language-html">
+    &lt;h1 class=&quot;main-h1&quot;&gt;This is Heading 1&lt;/h1&gt;
+    &lt;h2 class=&quot;main-h2&quot;&gt;This is Heading 2&lt;/h2&gt;
+    &lt;h3 class=&quot;main-h3&quot;&gt;This is Heading 3 &lt;/h3&gt;   
+    &lt;h4 class=&quot;main-h4&quot;&gt;This is Heading 4&lt;/h4&gt;
+    &lt;h5 class=&quot;main-h5&quot;&gt;This is Heading 5&lt;/h5&gt; 
+                </code>
+                </div>
+            </div>
+
+            <div class="main-content-container">
+                <h2>paragraph</h2>
+                <p>3 types of paragraph <br>
+
+                    small-p: small p is slightly smaller than the normal p, <br>
+                    main-p: main p is the ideal font for p <br>
+                    foot-p: for footer text <br>
+
+                    grey-p: for a grey color font.</p>
+            </div>
+            <hr />
+            <div class="display-flex">
+                <div class="display-component">
+                    <p class="main-p">This is Main paragraph</p>
+                    <p class="foot-p">This is footer paragraph </p>
+                    <p class="small-p">I am a small paragraph</p>
+                    <p class="small-p grey-p">I am a small grey paragraph</p>
+                </div>
+
+                <div class="code-snippet">
+                    <code class="language-html">
+            &lt;p class=&quot;main-p&quot;&gt;This is Main paragraph&lt;/p&gt;
+            &lt;p class=&quot;foot-p&quot;&gt;This is footer paragraph &lt;/p&gt;
+            &lt;p class=&quot;small-p&quot;&gt;I am a small paragraph&lt;/p&gt;
+            &lt;p class=&quot;small-p grey-p&quot;&gt;I am a small grey paragraph&lt;/p&gt;    
+                    </code>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/prism.js"></script>
+</body>
+
+</html>
