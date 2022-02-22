@@ -27,7 +27,7 @@
   --purple-active-clr: #e7d4f5;
   --valid-input-bg-clr: #84f1c980;
   --valid-input-border-clr: #059862;
-  --invalid-input-bg-clr: #FCC5C5;
+  --invalid-input-bg-clr: #fcc5c5;
   --invalid-input-border-clr: #a02222;
 }
 
@@ -282,6 +282,17 @@ code {
   text-decoration: underline;
 }
 
+.btn-transparent {
+  padding: 0;
+  background-color: transparent;
+  color: var(--white-clr);
+}
+
+.btn-transparent:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 .btn-icon {
   display: flex;
   gap: 0.5rem;
@@ -491,21 +502,21 @@ input {
   font-size: 2rem;
 }
 
-.valid-input{
+.valid-input {
   background-color: var(--valid-input-bg-clr);
   border: 1px solid var(--valid-input-border-clr);
 }
 
-.valid-input:focus{
+.valid-input:focus {
   border: 2px solid var(--valid-input-border-clr);
 }
 
-.invalid-input{
+.invalid-input {
   background-color: var(--invalid-input-bg-clr);
   border: 1px solid var(--invalid-input-border-clr);
 }
 
-.invalid-input:focus{
+.invalid-input:focus {
   border: 2px solid var(--invalid-input-border-clr);
 }
 
@@ -555,4 +566,24 @@ input {
 .grey-p {
   color: var(--overlap-clr);
   margin: 1rem;
+}
+
+/* navigation */
+.nav-ele {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.nav-bar {
+  border-radius: 0.3rem;
+  min-width: 18rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--overlap-clr);
+  padding: 1rem;
+  color: var(--white-clr);
 }
