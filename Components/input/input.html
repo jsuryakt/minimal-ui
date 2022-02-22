@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>image - minimal ui</title>
+    <title>input - minimal ui</title>
     <link rel="stylesheet" href="/base.css" />
     <link rel="stylesheet" href="input.css" />
 </head>
@@ -31,8 +31,8 @@
             <a class="sidebar-link" href="/components/badge/badge.html">badge</a>
             <a class="sidebar-link" href="/components/button/button.html">button</a>
             <a class="sidebar-link" href="/components/card/card.html">card</a>
-            <a class="sidebar-link sidebar-active" href="/components/image/image.html">image</a>
-            <a class="sidebar-link" href="/components/input/input.html">input</a>
+            <a class="sidebar-link" href="/components/image/image.html">image</a>
+            <a class="sidebar-link sidebar-active" href="/components/input/input.html">input</a>
             <a class="sidebar-link" href="/components/typography/typography.html">typography</a>
             <a class="sidebar-link" href="/components/navigation/navigation.html">navigation</a>
             <a class="sidebar-link" href="/components/slider/slider.html">slider</a>
@@ -40,36 +40,44 @@
 
         <div class="main content">
             <div class="main-content-container">
-                <h1>image</h1>
-                <p>images are made responsive with .img-fluid. This applies max-width: 100%; and height: auto; to the
-                    image so that it scales with the parent width.</p>
+                <h1>input</h1>
+                <p>input component is one that is used to get user input in a text field.</p>
             </div>
             <hr />
             <div class="display-flex">
                 <div class="display-component">
-                    <img class="img-fluid" src="https://picsum.photos/900/300">
+                    <input type="text" class="input-box input-sm">
+                    <input type="text" class="input-box input-md">
+                    <input type="text" class="input-box input-lg">
                 </div>
 
                 <div class="code-snippet">
                     <code class="language-html">
-    &lt;img class=&quot;img-fluid&quot; src=&quot;https://picsum.photos/900/300&quot;&gt;    
+    &lt;input type=&quot;text&quot; class=&quot;input-box input-sm&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;input-box input-md&quot;&gt;    
+    &lt;input type=&quot;text&quot; class=&quot;input-box input-lg&quot;&gt;   
                 </code>
                 </div>
             </div>
 
             <div class="main-content-container">
-                <h1>round responsive image</h1>
-                <p>round image which is responsive</p>
+                <h2>input validation</h2>
+                <p>input component can also have validation boxes. there are 2 variations: valid input, invalid input.
+
+                    valid-input: Green input field.
+                    invalid-input: Red input field.</p>
             </div>
             <hr />
             <div class="display-flex">
                 <div class="display-component">
-                    <img class="img-fluid img-round" src="https://picsum.photos/900/300">
+                    <input type="text" class="input-box input-sm valid-input">
+                    <input type="text" class="input-box input-sm invalid-input">
                 </div>
 
                 <div class="code-snippet">
                     <code class="language-html">
-    &lt;img class=&quot;img-fluid img-round&quot; src=&quot;https://picsum.photos/900/300&quot;&gt;    
+    &lt;input type=&quot;text&quot; class=&quot;input-box input-sm valid-input&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;input-box input-sm invalid-input&quot;&gt;  
                     </code>
                 </div>
             </div>
