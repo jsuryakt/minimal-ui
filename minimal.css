@@ -508,3 +508,51 @@ input {
 .invalid-input:focus{
   border: 2px solid var(--invalid-input-border-clr);
 }
+
+/* typography */
+
+.main-h1 {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.main-h2 {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.main-h3 {
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+
+.main-h4 {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.main-h5 {
+  font-size: 1.1rem;
+  margin: 1rem;
+}
+
+.main-p {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.foot-p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin: 1rem;
+}
+
+.small-p {
+  font-size: 0.9rem;
+  margin: 1rem;
+}
+
+.grey-p {
+  color: var(--overlap-clr);
+  margin: 1rem;
+}

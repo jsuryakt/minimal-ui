@@ -1,0 +1,4 @@
+.display-component {
+    flex-direction: column;
+    background-color: var(--side-hover-clr);
+}
