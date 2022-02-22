@@ -25,9 +25,9 @@
   --purple-hover-clr: #faf6fd;
   --icon-clr: #e4e4e4;
   --purple-active-clr: #e7d4f5;
-  --valid-input-bg-clr: #84f1c980;
+  --valid-input-bg-clr: #d1faeb80;
   --valid-input-border-clr: #059862;
-  --invalid-input-bg-clr: #fcc5c5;
+  --invalid-input-bg-clr: #fad7d7;
   --invalid-input-border-clr: #a02222;
 }
 
@@ -477,10 +477,11 @@ input {
 }
 
 .input-box {
-  border: 1px solid var(--overlap-clr);
+  border: 1px solid var(--secondary-clr);
   padding: 0.7rem;
   border-radius: 0.3rem;
   min-width: 18rem;
+  width: 100%;
 }
 
 .input-box:focus {
@@ -488,18 +489,18 @@ input {
 }
 
 .input-sm {
-  padding: 0.7rem;
-  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
 }
 
 .input-md {
-  padding: 1rem;
-  font-size: 1.6rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
 }
 
 .input-lg {
-  padding: 1.8rem;
-  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
 }
 
 .valid-input {
