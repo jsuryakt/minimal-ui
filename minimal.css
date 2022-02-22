@@ -439,3 +439,16 @@ code {
 .shadow {
   box-shadow: 2px 2px 10px 3px rgb(0, 0, 0, 0.3);
 }
+
+/* image  */
+
+.img-fluid {
+  height: auto;
+  width: 100%;
+}
+
+.img-round {
+  border-radius: 50%;
+  width: 18.75rem;
+  height: 18.75rem;
+}
