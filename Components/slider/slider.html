@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slider - minimal ui</title>
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="slider.css" />
+</head>
+
+<body>
+    <div class="main-header">
+        <a class="main-header-link" href="/index.html">
+            <header>
+                <h1 class="overlap">
+                    minimal
+                    <h1 class="under">UI</h1>
+                </h1>
+            </header>
+        </a>
+        <button id="bar" class="menu-bar" onclick="menu()"><i class="bi bi-list"></i></button>
+    </div>
+
+    <div class="container">
+        <div class="sidebar content">
+            <a class="sidebar-link" href="/components/install/install.html">install</a>
+            <a class="sidebar-link" href="/components/avatar/avatar.html">avatar</a>
+            <a class="sidebar-link" href="/components/alert/alert.html">alert</a>
+            <a class="sidebar-link" href="/components/badge/badge.html">badge</a>
+            <a class="sidebar-link" href="/components/button/button.html">button</a>
+            <a class="sidebar-link" href="/components/card/card.html">card</a>
+            <a class="sidebar-link" href="/components/image/image.html">image</a>
+            <a class="sidebar-link" href="/components/input/input.html">input</a>
+            <a class="sidebar-link" href="/components/typography/typography.html">typography</a>
+            <a class="sidebar-link" href="/components/navigation/navigation.html">navigation</a>
+            <a class="sidebar-link sidebar-active" href="/components/slider/slider.html">slider</a>
+        </div>
+
+        <div class="main content">
+            <div class="main-content-container">
+                <h1>slider</h1>
+                <p>slider is used to select varied values.<br>
+                default and round slider is available in minimal UI
+                </p>
+                <hr />
+            </div>
+
+            <div class="display-component">
+                <input type="range" min="1" max="100" step="1" value="50" class="slider">
+                <input type="range" min="1" max="100" step="1" value="50" class="slider round-slider">
+            </div>
+
+            <div class="code-snippet">
+                <code class="language-html">
+    &lt;input type=&quot;range&quot; min=&quot;1&quot; max=&quot;100&quot; step=&quot;1&quot; value=&quot;50&quot; class=&quot;slider&quot;&gt;
+    &lt;input type=&quot;range&quot; min=&quot;1&quot; max=&quot;100&quot; step=&quot;1&quot; value=&quot;50&quot; class=&quot;slider round-slider&quot;&gt;    
+                </code>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/prism.js"></script>
+</body>
+
+</html>
