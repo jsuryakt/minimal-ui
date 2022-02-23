@@ -204,6 +204,16 @@ code {
   transition: all 0.2s ease-in-out;
 }
 
+.btn-md {
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.btn-lg {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
 .btn-primary {
   background-color: var(--overlap-clr);
   color: var(--white-clr);
