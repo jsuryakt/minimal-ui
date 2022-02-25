@@ -71,13 +71,13 @@ header p {
 }
 
 @media screen and (max-width: 620px) {
-.header-main {
-  align-items: center;
-  flex-direction: column;
-  padding: 0;
-}
+  .header-main {
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
 
-.under {
-  right: -0.5rem;
-}
+  .under {
+    right: -0.5rem;
+  }
 }
