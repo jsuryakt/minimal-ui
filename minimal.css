@@ -324,7 +324,6 @@ code {
   width: 18.75rem;
   /* min-height: 25rem; */
   max-height: 31.25rem;
-  background-color: var(--white-clr);
   display: flex;
   flex-direction: column;
 }
