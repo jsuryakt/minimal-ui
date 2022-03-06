@@ -382,7 +382,8 @@ code {
 }
 
 .close-badge:hover {
-  background-color: var(--secondary-clr);
+  background-color: var(--black-clr);
+  color: var(--white-clr);
 }
 
 .card-title-desc {
