@@ -15,7 +15,7 @@ To install minimal-ui, you need to include the following link in your head tag:
 
 ## documentation website
 
-https://minimal.jsuryakt.codes
+https://minimal-ui-library.netlify.app/
 
 
 ## Screenshots
